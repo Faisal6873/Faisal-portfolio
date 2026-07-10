@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0068)file:///C:/Users/FaisaL/Downloads/CV%20June%202026/CV%20001.html#top -->
+<html lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Faisal Alhowiti — Safety &amp; Loss Prevention Engineer</title>
+<link href="https://fonts.googleapis.com/" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --graphite:#10141A;
+    --panel:#181E27;
+    --panel-2:#1E2632;
+    --line:#2A3341;
+    --amber:#E8A23D;
+    --amber-dim:#8A6428;
+    --hv-blue:#4FA8D8;
+    --text:#EDEFF2;
+    --text-dim:#8B95A3;
+    --text-faint:#586171;
+    --danger-tape:#E8A23D;
+    --radius:2px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--graphite);
+    color:var(--text);
+    font-family:'IBM Plex Sans',sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--amber);color:#10141A;}
+  h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;letter-spacing:-0.01em;}
+  a{color:inherit;text-decoration:none;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 32px;}
+  @media(max-width:640px){.wrap{padding:0 20px;}}
+
+  /* ---------- focus ---------- */
+  a:focus-visible, button:focus-visible{outline:2px solid var(--amber);outline-offset:3px;}
+
+  /* ---------- reduced motion ---------- */
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important;}
+  }
+
+  /* ---------- nav ---------- */
+  .nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(16,20,26,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1160px;margin:0 auto;padding:0 32px;
+    height:64px;display:flex;align-items:center;justify-content:space-between;
+  }
+  .nav-brand{display:flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;letter-spacing:0.02em;}
+  .nav-mark{width:20px;height:20px;flex-shrink:0;}
+  .nav-links{display:flex;gap:28px;list-style:none;font-size:13px;color:var(--text-dim);}
+  .nav-links a{transition:color .2s;}
+  .nav-links a:hover{color:var(--amber);}
+  .nav-cta{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;
+    padding:9px 16px;border:1px solid var(--amber-dim);color:var(--amber);
+    letter-spacing:0.03em;transition:all .2s;white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--amber);color:#10141A;border-color:var(--amber);}
+  .nav-toggle{display:none;background:none;border:none;color:var(--text);font-size:22px;cursor:pointer;}
+  @media(max-width:860px){
+    .nav-links{display:none;}
+    .nav-toggle{display:block;}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;
+    padding:140px 0 80px;overflow:hidden;
+  }
+  .hero-grid{
+    position:absolute;inset:0;
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size:64px 64px;
+    opacity:0.35;
+    mask-image:radial-gradient(ellipse 70% 70% at 70% 30%, black 0%, transparent 75%);
+  }
+  .hero-glow{
+    position:absolute;top:8%;right:6%;width:520px;height:520px;
+    background:radial-gradient(circle, rgba(232,162,61,0.16) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .hero-line{
+    position:absolute;top:0;right:14%;width:2px;height:100%;
+    background:linear-gradient(to bottom, transparent, var(--amber-dim) 20%, var(--amber-dim) 80%, transparent);
+    opacity:0.5;
+  }
+  .hero-content{position:relative;z-index:2;}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--amber);
+    letter-spacing:0.12em;text-transform:uppercase;margin-bottom:22px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:'';width:26px;height:1px;background:var(--amber);display:inline-block;}
+  .hero h1{
+    font-size:clamp(38px,6vw,76px);line-height:1.03;max-width:920px;
+    margin-bottom:26px;
+  }
+  .hero h1 em{
+    font-style:normal;color:var(--amber);
+  }
+  .hero-sub{
+    font-size:18px;color:var(--text-dim);max-width:600px;margin-bottom:40px;
+    font-weight:300;
+  }
+  .hero-sub strong{color:var(--text);font-weight:500;}
+  .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:64px;}
+  .btn-primary{
+    font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;
+    padding:15px 26px;background:var(--amber);color:#10141A;letter-spacing:0.02em;
+    transition:all .2s;border:1px solid var(--amber);
+  }
+  .btn-primary:hover{background:transparent;color:var(--amber);}
+  .btn-secondary{
+    font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;
+    padding:15px 26px;background:transparent;color:var(--text);letter-spacing:0.02em;
+    border:1px solid var(--line);transition:all .2s;
+  }
+  .btn-secondary:hover{border-color:var(--text-dim);}
+  .hero-stats{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+    border-top:1px solid var(--line);max-width:820px;
+  }
+  .stat{padding:20px 24px 0;border-right:1px solid var(--line);}
+  .stat:last-child{border-right:none;}
+  .stat-num{font-family:'Space Grotesk',sans-serif;font-size:30px;font-weight:600;color:var(--amber);}
+  .stat-label{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.06em;margin-top:4px;}
+  @media(max-width:640px){
+    .hero-stats{grid-template-columns:repeat(2,1fr);}
+    .stat{padding-top:18px;margin-bottom:12px;}
+  }
+
+  /* ---------- section shell ---------- */
+  section{padding:120px 0;position:relative;}
+  @media(max-width:640px){section{padding:80px 0;}}
+  .sec-head{margin-bottom:56px;max-width:640px;}
+  .sec-eyebrow{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--hv-blue);
+    letter-spacing:0.12em;text-transform:uppercase;margin-bottom:14px;
+  }
+  .sec-head h2{font-size:clamp(28px,4vw,42px);margin-bottom:16px;}
+  .sec-head p{color:var(--text-dim);font-size:16px;font-weight:300;}
+  .divider{height:1px;background:var(--line);}
+
+  /* ---------- summary ---------- */
+  .summary{background:var(--panel);}
+  .summary-inner{display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:start;}
+  @media(max-width:900px){.summary-inner{grid-template-columns:1fr;gap:36px;}}
+  .summary p{font-size:19px;font-weight:300;color:var(--text);line-height:1.7;}
+  .summary p + p{margin-top:20px;color:var(--text-dim);font-size:16px;}
+  .summary-panel{
+    background:var(--panel-2);border:1px solid var(--line);padding:28px;
+  }
+  .summary-panel-title{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:18px;}
+  .summary-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;}
+  .summary-row:last-child{border-bottom:none;}
+  .summary-row span:first-child{color:var(--text-dim);}
+  .summary-row span:last-child{font-family:'IBM Plex Mono',monospace;color:var(--amber);text-align:right;}
+
+  /* ---------- timeline (signature element: one-line diagram) ---------- */
+  .timeline{position:relative;}
+  .busbar{
+    position:absolute;left:50%;top:0;bottom:0;width:2px;
+    background:linear-gradient(to bottom, transparent, var(--amber-dim) 4%, var(--amber-dim) 96%, transparent);
+    transform:translateX(-50%);
+  }
+  .busbar::before,.busbar::after{
+    content:'';position:absolute;left:50%;width:8px;height:8px;
+    background:var(--amber);border-radius:50%;transform:translateX(-50%);
+    box-shadow:0 0 12px var(--amber);
+  }
+  .busbar::before{top:-4px;}
+  .busbar::after{bottom:-4px;}
+  @media(max-width:860px){.busbar{left:20px;}}
+
+  .tl-item{
+    position:relative;width:calc(50% - 48px);margin-bottom:8px;padding-bottom:64px;
+  }
+  .tl-item:nth-child(odd){margin-left:0;text-align:right;}
+  .tl-item:nth-child(even){margin-left:calc(50% + 48px);}
+  @media(max-width:860px){
+    .tl-item, .tl-item:nth-child(odd), .tl-item:nth-child(even){
+      width:auto;margin-left:56px;text-align:left;padding-bottom:48px;
+    }
+  }
+  .tl-node{
+    position:absolute;top:2px;width:14px;height:14px;
+    border:2px solid var(--amber);background:var(--graphite);
+    transform:rotate(45deg);
+  }
+  .tl-item:nth-child(odd) .tl-node{right:-55px;}
+  .tl-item:nth-child(even) .tl-node{left:-55px;}
+  @media(max-width:860px){
+    .tl-node{left:-42px !important;right:auto !important;}
+  }
+  .tl-item.future .tl-node{border-color:var(--text-faint);background:var(--graphite);}
+  .tl-item.future{opacity:0.55;}
+  .tl-date{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--amber);letter-spacing:0.04em;margin-bottom:6px;}
+  .tl-item.future .tl-date{color:var(--text-faint);}
+  .tl-role{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:600;margin-bottom:4px;}
+  .tl-org{font-size:14px;color:var(--text-dim);margin-bottom:6px;}
+  .tl-desc{font-size:13px;color:var(--text-faint);max-width:340px;}
+  .tl-item:nth-child(odd) .tl-desc{margin-left:auto;}
+
+  /* ---------- projects ---------- */
+  .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  @media(max-width:900px){.proj-grid{grid-template-columns:1fr;}}
+  .proj-card{background:var(--panel);padding:34px 30px;transition:background .2s;}
+  .proj-card:hover{background:var(--panel-2);}
+  .proj-tag{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--hv-blue);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:14px;}
+  .proj-card h3{font-size:21px;margin-bottom:10px;}
+  .proj-meta{font-size:13px;color:var(--text-faint);margin-bottom:18px;line-height:1.8;}
+  .proj-meta b{color:var(--text-dim);font-weight:500;}
+  .proj-outcomes{list-style:none;font-size:14px;color:var(--text-dim);}
+  .proj-outcomes li{position:relative;padding-left:16px;margin-bottom:8px;}
+  .proj-outcomes li::before{content:'—';position:absolute;left:0;color:var(--amber);}
+
+  /* ---------- experience ---------- */
+  .exp-item{border-bottom:1px solid var(--line);padding:36px 0;}
+  .exp-item:first-child{padding-top:0;}
+  .exp-top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:14px;}
+  .exp-title{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:600;}
+  .exp-org{font-size:14px;color:var(--amber);}
+  .exp-date{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--text-faint);white-space:nowrap;}
+  .exp-list{list-style:none;color:var(--text-dim);font-size:15px;}
+  .exp-list li{position:relative;padding-left:20px;margin-bottom:10px;line-height:1.6;}
+  .exp-list li::before{content:'▸';position:absolute;left:0;color:var(--hv-blue);}
+
+  /* ---------- expertise ---------- */
+  .exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  @media(max-width:900px){.exp-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:600px){.exp-grid{grid-template-columns:1fr;}}
+  .exp-cat{border-top:2px solid var(--amber);padding-top:18px;}
+  .exp-cat h4{font-size:16px;margin-bottom:14px;}
+  .chip-row{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--text-dim);
+    border:1px solid var(--line);padding:6px 11px;background:var(--panel-2);
+  }
+
+  /* ---------- certifications ---------- */
+  .cert-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  @media(max-width:900px){.cert-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.cert-grid{grid-template-columns:1fr;}}
+  .cert-card{background:var(--panel);padding:24px 20px;min-height:120px;display:flex;flex-direction:column;justify-content:space-between;}
+  .cert-name{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600;line-height:1.3;margin-bottom:14px;}
+  .cert-status{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;}
+  .cert-status.held{color:var(--amber);}
+  .cert-status.pending{color:var(--hv-blue);}
+
+  /* ---------- training tags ---------- */
+  .tag-cloud{display:flex;flex-wrap:wrap;gap:10px;}
+  .tag-cloud span{
+    font-size:13px;color:var(--text-dim);border:1px solid var(--line);
+    padding:8px 14px;border-radius:2px;
+  }
+
+  /* ---------- achievements ---------- */
+  .ach-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  @media(max-width:700px){.ach-grid{grid-template-columns:1fr;}}
+  .ach-card{background:var(--panel);padding:34px;}
+  .ach-icon{width:32px;height:32px;margin-bottom:18px;color:var(--amber);}
+  .ach-card h4{font-size:17px;margin-bottom:10px;}
+  .ach-card p{color:var(--text-dim);font-size:14px;}
+
+  /* ---------- philosophy ---------- */
+  .philosophy{background:var(--panel);position:relative;}
+  .philosophy-inner{max-width:780px;margin:0 auto;text-align:center;padding:0 20px;}
+  .quote-mark{font-family:'Space Grotesk',sans-serif;font-size:64px;color:var(--amber-dim);line-height:1;}
+  .philosophy h3{
+    font-size:clamp(22px,3.4vw,32px);font-weight:400;font-family:'Space Grotesk',sans-serif;
+    line-height:1.45;margin:12px 0 24px;
+  }
+  .philosophy h3 em{font-style:normal;color:var(--amber);}
+  .philosophy cite{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--text-faint);font-style:normal;}
+
+  /* ---------- leadership + memberships ---------- */
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
+  @media(max-width:800px){.two-col{grid-template-columns:1fr;gap:44px;}}
+  .two-col h3{font-size:22px;margin-bottom:18px;}
+  .two-col p{color:var(--text-dim);font-size:15px;margin-bottom:14px;}
+  .mem-list{list-style:none;}
+  .mem-list li{
+    display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line);font-size:14px;
+  }
+  .mem-list li span:last-child{font-family:'IBM Plex Mono',monospace;color:var(--text-faint);font-size:12px;}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--panel);}
+  .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+  @media(max-width:800px){.contact-inner{grid-template-columns:1fr;gap:40px;}}
+  .contact h2{font-size:clamp(30px,4.5vw,48px);margin-bottom:20px;}
+  .contact p{color:var(--text-dim);font-size:16px;margin-bottom:32px;max-width:440px;}
+  .contact-links{list-style:none;}
+  .contact-links li{border-top:1px solid var(--line);padding:18px 0;display:flex;justify-content:space-between;align-items:center;font-size:15px;}
+  .contact-links li:last-child{border-bottom:1px solid var(--line);}
+  .contact-links a:hover{color:var(--amber);}
+  .contact-label{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.06em;}
+
+  footer{border-top:1px solid var(--line);padding:32px 0;}
+  .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--text-faint);}
+</style>
+</head>
+<body>
+<nav class="nav">
+<div class="nav-inner">
+<a class="nav-brand" href="#top">
+<svg class="nav-mark" fill="none" viewbox="0 0 24 24"><path d="M12 2L3 7v6c0 5 4 8.5 9 9 5-.5 9-4 9-9V7l-9-5z" stroke="#E8A23D" stroke-width="1.4"></path><path d="M12 7v6M9 10h6" stroke="#E8A23D" stroke-width="1.4"></path></svg>
+      Faisal F. ALHOWITI
+    </a>
+<ul class="nav-links">
+<li><a href="#timeline">Career</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#expertise">Expertise</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<a class="nav-cta" download="" href="Faisal_Alhowiti_CV.pdf">Download CV ↓</a>
+</div>
+</nav>
+<main id="top" tabindex="-1">
+<!-- HERO -->
+<header class="hero">
+<div class="hero-grid"></div>
+<div class="hero-glow"></div>
+<div class="hero-line"></div>
+<div class="wrap hero-content">
+<div class="eyebrow">Riyadh, Saudi Arabia — Available for Senior HSE &amp; Loss Prevention Roles</div>
+<h1>Preventing loss<br/>before it <em>happens.</em></h1>
+<p class="hero-sub">Occupational Health, Safety, and Loss Prevention Engineer with experience supporting major infrastructure and power projects in Saudi Arabia. Currently part of the National Grid SA safety team, focused on preventing workplace incidents, developing Safe Operating Procedures (SOPs), and delivering frontline safety training. 
+Committed to strengthening safety culture, improving operational discipline, and implementing proactive risk management strategies that protect people, assets, and project objectives.
+</p>
+<div class="hero-ctas">
+<a class="btn-primary" href="#projects">View Projects</a>
+<a class="btn-secondary" href="#contact">Get in Touch</a>
+</div>
+<div class="hero-stats">
+<div class="stat"><div class="stat-num">4+</div><div class="stat-label">Years in Safety &amp; Loss Prevention</div></div>
+<div class="stat"><div class="stat-num">12</div><div class="stat-label">Certifications Held</div></div>
+<div class="stat"><div class="stat-num">3</div><div class="stat-label">Tier-1 Clients / PMCs</div></div>
+<div class="stat"><div class="stat-num">380kV</div><div class="stat-label">Highest-Risk Site Secured</div></div>
+</div>
+</div>
+</header>
+<!-- SUMMARY -->
+<section class="summary">
+<div class="wrap summary-inner">
+<div>
+<div class="sec-eyebrow">Profile</div>
+<p>
+                  I began my career as an Electrical Site Engineer, where That technical foundation continues to influence my approach to occupational health and safety, allowing me to evaluate hazards with an engineering mindset rather than relying solely on checklist compliance. 
+I believe effective safety management starts with understanding how work is performed, how systems interact, and where failures can occur before they lead to incidents.
+Throughout my career, I have applied this perspective across major infrastructure and power projects, working closely with multidisciplinary teams, contractors, and project management to identify risks, strengthen operational controls, and improve safety performance. My expertise includes incident investigation, root cause analysis, contractor HSE management, risk assessment, regulatory compliance, and the development of practical safety procedures that support both operational excellence and workforce protection.
+        </p>
+</div>
+<div class="summary-panel">
+<div class="summary-panel-title">// Credential Snapshot</div>
+<div class="summary-row"><span>Base Discipline</span><span>Electrical Eng.</span></div>
+<div class="summary-row"><span>SCE License</span><span>775362</span></div>
+<div class="summary-row"><span>OSH Expert Level</span><span>Level 2</span></div>
+<div class="summary-row"><span>ISO 45001 LA</span><span>In Progress</span></div>
+<div class="summary-row"><span>Current Client</span><span>SEC / NEOM</span></div>
+<div class="summary-row"><span>Status</span><span>Actively Practicing</span></div>
+</div>
+</div>
+</section>
+<!-- TIMELINE -->
+<section id="timeline" tabindex="-1">
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">01 — Career Timeline</div>
+<h2>Career trajectory</h2>
+<p>Each milestone marks a step toward zero-harm leadership — from field engineering to safety and loss prevention.</p>
+</div>
+</div>
+<div class="wrap timeline">
+<div class="busbar"></div>
+<div class="tl-item">
+<div class="tl-node"></div>
+<div class="tl-date">2021</div>
+<div class="tl-role">BSc Electrical Engineering</div>
+<div class="tl-org">Tabuk University</div>
+<div class="tl-desc">Foundation in power systems, circuit theory, and electrical design.</div>
+</div>
+<div class="tl-item">
+<div class="tl-node"></div>
+<div class="tl-date">JAN 2022 – FEB 2023</div>
+<div class="tl-role">Electrical Site Engineer</div>
+<div class="tl-org">AYC — King Faisal Air Academy · Client: Saudi Air Force · PMC: Dar Al-Riyadh</div>
+<div class="tl-desc">Owned inspection &amp; test plans, electrical QA/QC, and code-compliant construction oversight.</div>
+</div>
+<div class="tl-item">
+<div class="tl-node"></div>
+<div class="tl-date">FEB – DEC 2023</div>
+<div class="tl-role">HSE Engineer</div>
+<div class="tl-org">MASCO</div>
+<div class="tl-desc">Transitioned into occupational safety — risk assessment, training delivery, site inspection programs.</div>
+</div>
+<div class="tl-item">
+<div class="tl-node"></div>
+<div class="tl-date">DEC 2023 – JUN 2025</div>
+<div class="tl-role">HSE Engineer</div>
+<div class="tl-org">Al-Babtain — 380kV Dirab Substation · Client: SEC · PMC: PDC</div>
+<div class="tl-desc">Ran incident investigation, RCA, and daily/weekly/monthly HV site inspection systems.</div>
+</div>
+<div class="tl-item">
+<div class="tl-node"></div>
+<div class="tl-date">JUN 2025 — PRESENT</div>
+<div class="tl-role">Safety &amp; Loss Prevention Engineer</div>
+<div class="tl-org">Saudi Electricity Company — NEOM Access Road, Highway 55 · PMC: Bechtel</div>
+<div class="tl-desc">Leading HSE performance reporting and loss-prevention oversight on a flagship NEOM infrastructure corridor.</div>
+</div>
+<div class="tl-item future">
+<div class="tl-node"></div>
+<div class="tl-date">TARGET · 2027</div>
+<div class="tl-role">CSCP · ISO 45001 LA</div>
+<div class="tl-org">Next credential milestones</div>
+<div class="tl-desc">Closing the process-safety and management-systems gap en route to Senior HSE Engineer.</div>
+</div>
+</div>
+</section>
+<div class="wrap"><div class="divider"></div></div>
+<!-- PROJECTS -->
+<section id="projects" tabindex="-1">
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">02 — Field Record</div>
+<h2>Selected projects</h2>
+<p>Infrastructure and power projects where safety was engineered in, not inspected in afterward.</p>
+</div>
+<div class="proj-grid">
+<div class="proj-card">
+<div class="proj-tag">Safety &amp; Loss Prevention</div>
+<h3>380kV Dirab Substation</h3>
+<div class="proj-meta"><b>Client:</b> Saudi Electricity Company<br/><b>PMC:</b> Project Development Company<br/><b>Role:</b> HSE Engineer</div>
+<ul class="proj-outcomes">
+<li>Led incident investigations and root cause analysis on a high-consequence site</li>
+<li>Built a daily/weekly/monthly site-wide inspection &amp; compliance system</li>
+<li>Compiled monthly HSE performance reporting for management</li>
+</ul>
+</div>
+<div class="proj-card">
+<div class="proj-tag">Loss Prevention — Giga-Project</div>
+<h3>NEOM Access Road — Highway 55</h3>
+<div class="proj-meta"><b>Client:</b> NEOM<br/><b>PMC:</b> Bechtel<br/><b>Role:</b> Safety &amp; Loss Prevention Engineer</div>
+<ul class="proj-outcomes">
+<li>Delivering SEC's loss-prevention program on a flagship NEOM corridor</li>
+<li>Coordinating subcontractor safety compliance at giga-project scale</li>
+<li>Applying Bechtel's Zero Accidents field standards</li>
+</ul>
+</div>
+<div class="proj-card">
+<div class="proj-tag">Safety Systems Foundation</div>
+<h3>King Faisal Air Academy</h3>
+<div class="proj-meta"><b>Client:</b> Saudi Air Force<br/><b>PMC:</b> Dar Al-Riyadh<br/><b>Role:</b> Electrical Site Engineer</div>
+<ul class="proj-outcomes">
+<li>Launched a hazard ID &amp; reporting system that cut near-misses</li>
+<li>Built the inspection discipline that carried into my HSE career</li>
+<li>Ensured code-compliant, safety-first construction execution</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- EXPERIENCE -->
+<section id="experience" tabindex="-1">
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">03 — Full Record</div>
+<h2>Work experience</h2>
+</div>
+<div class="exp-item">
+<div class="exp-top">
+<div><span class="exp-title">Safety &amp; Loss Prevention Engineer</span><br/><span class="exp-org">Saudi Electricity Company</span></div>
+<div class="exp-date">JUN 2025 — PRESENT</div>
+</div>
+<ul class="exp-list">
+<li>Lead and participate in incident investigations; identify root causes and recommend corrective actions</li>
+<li>Conduct regular safety inspections of substations, transformers, and switchgear rooms</li>
+<li>Review and update site procedures based on operational changes and investigation findings</li>
+<li>Maintain full traceability of findings, corrective actions, and close-out follow-ups</li>
+<li>Compile monthly HSE performance reports for senior management review</li>
+</ul>
+</div>
+<div class="exp-item">
+<div class="exp-top">
+<div><span class="exp-title">HSE Engineer</span><br/><span class="exp-org">Al-Babtain — 380kV Dirab Substation, SEC / PDC</span></div>
+<div class="exp-date">DEC 2023 — JUN 2025</div>
+</div>
+<ul class="exp-list">
+<li>Enforced compliance with occupational health &amp; safety regulations across a live HV substation build</li>
+<li>Ran risk assessments to identify hazards and developed mitigation strategies</li>
+<li>Designed and delivered safety training on emergency response and PPE use</li>
+<li>Aligned workers, supervisors, and subcontractors on safety expectations and site procedures</li>
+</ul>
+</div>
+<div class="exp-item">
+<div class="exp-top">
+<div><span class="exp-title">HSE Engineer</span><br/><span class="exp-org">MASCO</span></div>
+<div class="exp-date">FEB 2023 — DEC 2023</div>
+</div>
+<ul class="exp-list">
+<li>Managed site safety and health programs, including hazard inspections</li>
+<li>Oversaw environmental health and safety programs</li>
+<li>Trained employees on PPE use and safety requirements</li>
+</ul>
+</div>
+<div class="exp-item">
+<div class="exp-top">
+<div><span class="exp-title">Electrical Site Engineer</span><br/><span class="exp-org">AYC — King Faisal Air Academy, Saudi Air Force / Dar Al-Riyadh</span></div>
+<div class="exp-date">JAN 2022 — FEB 2023</div>
+</div>
+<ul class="exp-list">
+<li>Directed implementation and monitoring of all electrical works on site</li>
+<li>Provided engineering and technical support across electrical workgroups</li>
+<li>Ensured correct execution of the approved Inspection &amp; Test Plan</li>
+<li>Oversaw construction adherence to approved drawings and specifications</li>
+</ul>
+</div>
+</div>
+</section>
+<div class="wrap"><div class="divider"></div></div>
+<!-- EXPERTISE -->
+<section id="expertise" tabindex="-1">
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">04 — Skill Systems</div>
+<h2>Technical expertise</h2>
+</div>
+<div class="exp-grid">
+<div class="exp-cat">
+<h4>HSE Management Systems</h4>
+<div class="chip-row">
+<span class="chip">ISO 45001</span><span class="chip">HSE-MS Design</span><span class="chip">Audit &amp; Review</span>
+</div>
+</div>
+<div class="exp-cat">
+<h4>Incident &amp; Risk</h4>
+<div class="chip-row">
+<span class="chip">Investigation</span><span class="chip">Root Cause Analysis</span><span class="chip">HIRA</span>
+</div>
+</div>
+<div class="exp-cat">
+<h4>Contractor &amp; Site Governance</h4>
+<div class="chip-row">
+<span class="chip">Permit to Work</span><span class="chip">Subcontractor Compliance</span><span class="chip">Inductions</span>
+</div>
+</div>
+<div class="exp-cat">
+<h4>Reporting &amp; Data</h4>
+<div class="chip-row">
+<span class="chip">Power BI</span><span class="chip">Enablon</span><span class="chip">KPI Dashboards</span>
+</div>
+</div>
+<div class="exp-cat">
+<h4>Electrical &amp; HV Safety</h4>
+<div class="chip-row">
+<span class="chip">Substations</span><span class="chip">Switchgear</span><span class="chip">Arc Flash</span><span class="chip">NFPA 70E</span>
+</div>
+</div>
+<div class="exp-cat">
+<h4>Engineering Tools</h4>
+<div class="chip-row">
+<span class="chip">AutoCAD</span><span class="chip">MATLAB</span><span class="chip">MS Office</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CERTIFICATIONS -->
+<section id="certifications" style="background:var(--panel);" tabindex="-1">
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">05 — Credentials</div>
+<h2>Certifications</h2>
+</div>
+<div class="cert-grid">
+<div class="cert-card"><div class="cert-name">NEBOSH (National Examination Board in OSH)</div><div class="cert-status held">Held</div></div>
+<div class="cert-card"><div class="cert-name">IOSH Managing Safely</div><div class="cert-status held">Held</div></div>
+<div class="cert-card"><div class="cert-name">IOSH Working Safely</div><div class="cert-status held">Held</div></div>
+<div class="cert-card"><div class="cert-name">CIEH — Chartered Institute of Environmental Health</div><div class="cert-status held">Held</div></div>
+<div class="cert-card"><div class="cert-name">OSHA — Occupational Safety &amp; Health Administration</div><div class="cert-status held">Held</div></div>
+<div class="cert-card"><div class="cert-name">Project Management Professional (PMP)</div><div class="cert-status held">Held</div></div>
+<div class="cert-card"><div class="cert-name">OTHM Level 6 — OSH Management</div><div class="cert-status held">Held</div></div>
+<div class="cert-card"><div class="cert-name">CPR / AED / First Aid</div><div class="cert-status held">Held</div></div>
+<div class="cert-card"><div class="cert-name">Certificate in IT Skills (CIT)</div><div class="cert-status held">Held</div></div>
+<div class="cert-card"><div class="cert-name">Incident Investigation</div><div class="cert-status held">Held</div></div>
+<div class="cert-card"><div class="cert-name">ISO 45001 Lead Auditor</div><div class="cert-status pending">Result Pending</div></div>
+<div class="cert-card"><div class="cert-name">High Voltage Safety Specialist</div><div class="cert-status pending">Planned 2026</div></div>
+</div>
+</div>
+</section>
+<!-- TRAINING -->
+<section>
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">06 — Field Training</div>
+<h2>Specialized site training</h2>
+</div>
+<div class="tag-cloud">
+<span>Construction &amp; Live Roads Safety</span>
+<span>Electrical Equipment Inspection</span>
+<span>Scaffolding &amp; Excavation Inspection</span>
+<span>Permit to Work System</span>
+<span>Heavy Lifting Inspection</span>
+<span>Toolbox Talks &amp; Induction</span>
+<span>Safety Meeting Facilitation</span>
+<span>Supervision in Accident Prevention</span>
+<span>Plant Layout &amp; Housekeeping</span>
+<span>Waste Management</span>
+<span>Emergency Procedures</span>
+<span>MSDS &amp; Chemical Safety</span>
+</div>
+</div>
+</section>
+<div class="wrap"><div class="divider"></div></div>
+<!-- ACHIEVEMENTS -->
+<section>
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">07 — Impact</div>
+<h2>Achievements</h2>
+</div>
+<div class="ach-grid">
+<div class="ach-card">
+<svg class="ach-icon" fill="none" viewbox="0 0 24 24"><path d="M12 2L3 7v6c0 5 4 8.5 9 9 5-.5 9-4 9-9V7l-9-5z" stroke="currentColor" stroke-width="1.4"></path><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.4"></path></svg>
+<h4>Client-Recognized HSE Performance</h4>
+<p>Earned high praise and satisfaction from SEC and PMC stakeholders across the Dirab substation build, contributing directly to positive project delivery outcomes.</p>
+</div>
+<div class="ach-card">
+<svg class="ach-icon" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"></circle><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.4"></path></svg>
+<h4>Safety Culture on a Live HV Site</h4>
+<p>Built proactive hazard-reporting behavior among subcontractor crews working around energized 380kV equipment — a genuinely high-consequence environment.</p>
+</div>
+<div class="ach-card">
+<svg class="ach-icon" fill="none" viewbox="0 0 24 24"><path d="M4 19V5M4 5l6 5-6 5M14 19V9M14 9l6 5-6 5" stroke="currentColor" stroke-width="1.4"></path></svg>
+<h4>Reduced Incidents Through Reporting Systems</h4>
+<p>Introduced hazard ID &amp; reporting structures at King Faisal Air Academy that measurably cut workplace accidents and near-misses.</p>
+</div>
+<div class="ach-card">
+<svg class="ach-icon" fill="none" viewbox="0 0 24 24"><path d="M3 12h4l3 8 4-16 3 8h4" stroke="currentColor" stroke-width="1.4"></path></svg>
+<h4>Faster Emergency Response</h4>
+<p>Improved emergency response procedures through structured drills and training, sharpening preparedness and response times across site teams.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PHILOSOPHY -->
+<section class="philosophy">
+<div class="wrap philosophy-inner">
+<div class="quote-mark">"</div>
+<h3>Safety isn't a checklist bolted onto engineering — it's <em>engineering done right.</em> Understanding what's behind the panel is what lets me protect the people standing in front of it.</h3>
+<cite>— Faisal Alhowiti, on working HSE inside live HV environments</cite>
+</div>
+</section>
+<!-- LEADERSHIP + MEMBERSHIPS -->
+<section>
+<div class="wrap two-col">
+<div>
+<div class="sec-eyebrow">08 — Leadership</div>
+<h3>Leading without direct authority</h3>
+<p>On multi-contractor sites, safety leadership rarely comes with a reporting line. I earn compliance by running clear toolbox talks and inductions, mentoring junior HSE staff, and giving supervisors and subcontractors a safety case they can act on — not just a rule to follow.</p>
+<p>I sit close to project engineering, translating electrical and construction risk into language site teams actually use, and represent HSE directly in client and PMC coordination meetings.</p>
+</div>
+<div>
+<div class="sec-eyebrow">09 — Professional Standing</div>
+<h3>Memberships &amp; accreditation</h3>
+<ul class="mem-list">
+<li><span>Saudi Council of Engineers</span><span>№ 775362</span></li>
+<li><span>National CPR Foundation — Certified First Aider</span><span>№ E467182</span></li>
+<li><span>SEC — Approved HSE Engineer</span><span>Active</span></li>
+<li><span>Occupational Safety &amp; Health Expert</span><span>Level 2 / 0125112210</span></li>
+</ul>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="contact" id="contact" tabindex="-1">
+<div class="wrap contact-inner">
+<div>
+<div class="sec-eyebrow">10 — Get in Touch</div>
+<h2>Let's talk about your next project.</h2>
+<p>Open to Senior HSE Engineer, Loss Prevention, and Electrical/HV Safety roles across KSA and the wider GCC.</p>
+<a class="btn-primary" download="" href="Faisal_Alhowiti_CV.pdf">Download Full CV ↓</a>
+</div>
+<ul class="contact-links">
+<li><span class="contact-label">Email</span><a href="mailto:FaisaL.F.D.Alhowiti@Gmail.com">FaisaL.F.D.Alhowiti@Gmail.com</a></li>
+<li><span class="contact-label">Mobile</span><a href="tel:+966536456873">+966 53 645 6873</a></li>
+<li><span class="contact-label">Alt. Mobile</span><a href="tel:+966564535773">+966 56 453 5773</a></li>
+<li><span class="contact-label">Location</span><span>Riyadh, Saudi Arabia</span></li>
+</ul>
+</div>
+</section>
+<footer>
+<div class="wrap footer-inner">
+<span>© 2026 FAISAL F. ALHOWITI — SAFETY &amp; LOSS PREVENTION ENGINEER</span>
+<span>SCE № 775362 · RIYADH, KSA</span>
+</div>
+</footer>
+</main>
+<script>
+  // Mobile nav fallback: smooth-scroll handled by CSS; ensure focus lands on target for a11y
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(e){
+      var id = this.getAttribute('href').slice(1);
+      var target = document.getElementById(id);
+      if(target){ target.setAttribute('tabindex','-1'); }
+    });
+  });
+</script>
+</body></html>
