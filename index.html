@@ -77,36 +77,16 @@
   }
 
   /* ---------- scroll-to-top button ---------- */
-  <script>
-  // Existing smooth-scroll accessibility
-  document.querySelectorAll('a[href^="#"]').forEach(function(link){
-    link.addEventListener('click', function(){
-      var id = this.getAttribute('href').slice(1);
-      var target = document.getElementById(id);
-      if(target){
-        target.setAttribute('tabindex','-1');
-      }
-    });
-  });
-
-  // Scroll To Top Button
-  const scrollBtn = document.getElementById("scrollTopBtn");
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      scrollBtn.classList.add("show");
-    } else {
-      scrollBtn.classList.remove("show");
-    }
-  });
-
-  scrollBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-</script>
+  .scroll-to-top{
+    position:fixed;bottom:32px;right:32px;z-index:99;
+    width:48px;height:48px;display:flex;align-items:center;justify-content:center;
+    background:var(--amber);color:#10141A;border:none;border-radius:2px;cursor:pointer;
+    opacity:0;visibility:hidden;transition:opacity .3s, visibility .3s;font-size:20px;font-weight:600;
+    font-family:'Space Grotesk',sans-serif;
+  }
+  .scroll-to-top.show{opacity:1;visibility:visible;}
+  .scroll-to-top:hover{background:var(--hv-blue);color:var(--text);}
+  @media(max-width:640px){.scroll-to-top{bottom:20px;right:20px;width:44px;height:44px;font-size:18px;}}
 
   /* ---------- hero ---------- */
   .hero{
@@ -747,6 +727,7 @@ Throughout my career, I have applied this perspective across major infrastructur
 </div>
 </footer>
 </main>
+<button id="scrollTopBtn" class="scroll-to-top" aria-label="Back to top">↑</button>
 <script>
   // Mobile nav fallback: smooth-scroll handled by CSS; ensure focus lands on target for a11y
   document.querySelectorAll('a[href^="#"]').forEach(function(link){
@@ -756,5 +737,9 @@ Throughout my career, I have applied this perspective across major infrastructur
       if(target){ target.setAttribute('tabindex','-1'); }
     });
   });
+
+  const scrollBtn=document.getElementById("scrollTopBtn");
+  window.addEventListener("scroll",()=>{if(window.scrollY>300){scrollBtn.classList.add("show");}else{scrollBtn.classList.remove("show");}});
+  scrollBtn.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 </script>
 </body></html>
